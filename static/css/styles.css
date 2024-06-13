@@ -1,0 +1,268 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-image: url('img/laptop.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  
+
+  .gif-container {
+    position: absolute; /* Position the container relative to its containing element */
+    top:360px; /* Position it 50% from the top of the containing element */
+    left: 50%; /* Position it 50% from the left of the containing element */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+  }
+  
+  /* Change the size of the GIF container */
+  .gif-container img {
+    width: 708px; /* Change the width as per your requirement */
+    height: 404px; /* Change the height as per your requirement */
+  }
+  .content-wrapper {
+    width: 70%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the content horizontally */
+    justify-content: center; /* This centers the content vertically */
+    height: 100vh;
+    /* Remove padding-top if it was previously set */
+  }
+  
+  .title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+    
+    .tooltip {
+      position: absolute;
+      text-align: center;
+      width: auto;
+      padding: 4px;
+      font: 12px sans-serif;
+      background: lightsteelblue;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+      opacity: 0;
+    }
+    
+    
+    .content-wrapper {
+      width: 70%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* This centers the content horizontally */
+      justify-content: center; /* This centers the content vertically */
+      height: 100vh;
+      /* Remove padding-top if it was previously set */
+    }
+    
+    .title {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #333;
+      font-size: 2.5em;
+      margin-bottom: 200px;
+    }
+    .tooltip {   
+      position: absolute;           
+      text-align: center;           
+      width: 60px;                  
+      height: 28px;                 
+      padding: 2px;             
+      font: 12px sans-serif;        
+      background: lightsteelblue;   
+      border: 0px;      
+      border-radius: 8px;           
+      pointer-events: none;         
+  }
+  
+    
+    .drop-area {
+      background-color: #fff;
+      border: 2px dashed #ddd;
+      border-radius: 15px;
+      padding-top: 100px; 
+      padding: 40px;
+      transition: border-color 0.3s;
+      text-align: center; 
+      margin-top: 180px
+    }
+    
+    .drop-area p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+    
+    .my-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .button {
+      background-color: #4A90E2;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s;
+    }
+    
+    .button:hover {
+      background-color: #3F7AC0;
+    }
+    
+    .upload-icon {
+      width: 150px;
+      margin: 20px auto;
+      display: block;
+      cursor: pointer;
+    }
+    
+    input[type="file"] {
+      display: none;
+    }
+    
+    
+  
+    #layoutOptions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    #layoutOptions button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4A90E2;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    
+    #layoutOptions button:hover {
+      background-color: #3F7AC0;
+    }
+    
+    /* Additional styles for range inputs, if needed */
+    .editor input[type="range"] {
+      margin: 10px 0;
+      width: 100%;
+    }
+    
+    .editor input[type="range"]:focus {
+      outline: none;
+    }
+    
+    .editor input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #4A90E2;
+      cursor: pointer;
+    }
+    
+    .editor input[type="range"]::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #4A90E2;
+      cursor: pointer;
+    }
+    
+    .editor input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      background: #ddd;
+      border-radius: 1.3px;
+    }
+    
+    .editor input[type="range"]::-moz-range-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      background: #ddd;
+      border-radius: 1.3px;
+    }
+    
+  
+    .layout-container {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 70%;
+      max-width: 600px;
+  }
+  
+  #graph-type {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+  }
+  
+  .layout-options button {
+      background-color: #4A90E2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+  }
+  
+  .layout-options button:hover {
+      background-color: #3F7AC0;
+  }
+  
+    .link {
+      fill: none;
+      stroke: #555;
+      stroke-opacity: 0.4;
+      stroke-width: 1.5px;
+    }
+    
+    .node circle {
+      fill: #fff;
+      stroke: steelblue;
+      stroke-width: 3px;
+    }
+    
+    .node text {
+        pointer-events: none; /* Make sure text doesn't interfere with node interaction */
+        font-size: 12px; /* Adjust the font size as needed */
+    }
+    

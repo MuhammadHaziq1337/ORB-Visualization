@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualization Options</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script> <!-- Add D3.js script -->
+
+    <!-- JavaScript code for loading screen -->
+    <script>
+        
+        window.onload = function() {
+          
+            setTimeout(function() {
+               
+                document.getElementById('gif-container').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+            }, 3500); // 3000 milliseconds = 3 seconds
+        };
+    </script>
+
+<style>
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background-image: url('/static/images/laptop.jpg'); /* Replace with the path to your background image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    
+</style>
+</head>
+<body>
+
+    <!-- Loading Screen with GIF -->
+   <div class="gif-container" id="gif-container">
+        <img src="/static/gif/1.gif" alt="Loading..." />
+    </div>
+
+    <!-- Main content (initially hidden) -->
+    <div class="main-content" id="main-content" style="display: none;">
+        <h1 style="font-size: 24px; color: #333; margin: 1000 1000 100px;">Choose a Visualization</h1>
+        <ul>
+            <li><a href="/character-interaction" style="font-size: 18px; color: #4A90E2; text-decoration: none;">Character Interaction Graph</a></li>
+            <li><a href="/streamgraph" style="font-size: 18px; color: #4A90E2; text-decoration: none;">Sentiment Streamgraph</a></li>
+            <li><a href="/wordcloud" style="font-size: 18px; color: #4A90E2; text-decoration: none;">Movie-Rating Word-Cloud</a></li>
+        </ul>
+    </div>
+    
+    
+    </div>
+</body>
+</html>
